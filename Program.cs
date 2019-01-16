@@ -11,7 +11,8 @@ namespace LabTwo
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Grand Circus' Room Detail Generator!");
-            while (true)
+            bool proceed = true;
+            while (proceed == true)
             {
                 try
                 {
@@ -29,29 +30,37 @@ namespace LabTwo
                     Console.WriteLine("Area: " + (length * width));
                     Console.WriteLine("Perimeter: " + ((2 * length) + (2 * width)));
                     Console.WriteLine("Volume: " + (length * width * height));
+
+                    proceed = Continue();
                 }
                 catch (FormatException)
                 {
                     Console.WriteLine("This is not an accepted input");
                 }
-                //Prompt user to continue
-                Console.WriteLine("Would you like to continue? (y/n)");
-                string userContinue = Console.ReadLine().ToLower();
-
-                if (userContinue == "y")
-                {
-                    continue;
-                }
-                else if (userContinue == "n")
-                {
-                    break;
-                }
-                else
-                {
-                    Console.WriteLine("That is not a valid response. Please try again: (y/n)");
-                    userContinue = Console.ReadLine().ToLower();
-                }
             }
+        }
+
+        public static bool Continue()
+        {
+             //Prompt user to continue
+             Console.WriteLine("Would you like to continue? (y/n)");
+             string userContinue = Console.ReadLine().ToLower();
+             bool forward;
+
+            if (userContinue == "y")
+            {
+                forward = true;
+            }
+            else if (userContinue == "n")
+            {
+                forward = false; ;
+            }
+            else
+            {
+                Console.WriteLine("That is not a valid response. Please try again: (y/n)");
+                forward = Continue();
+            }
+            return forward;
         }
     }
 }

@@ -1,0 +1,7 @@
+C:\Users\bmwah\source\repos\LabTwo\LabTwo\bin\Debug\LabTwo.exe.config
+C:\Users\bmwah\source\repos\LabTwo\LabTwo\bin\Debug\LabTwo.exe
+C:\Users\bmwah\source\repos\LabTwo\LabTwo\bin\Debug\LabTwo.pdb
+C:\Users\bmwah\source\repos\LabTwo\LabTwo\obj\Debug\LabTwo.csprojAssemblyReference.cache
+C:\Users\bmwah\source\repos\LabTwo\LabTwo\obj\Debug\LabTwo.csproj.CoreCompileInputs.cache
+C:\Users\bmwah\source\repos\LabTwo\LabTwo\obj\Debug\LabTwo.exe
+C:\Users\bmwah\source\repos\LabTwo\LabTwo\obj\Debug\LabTwo.pdb
